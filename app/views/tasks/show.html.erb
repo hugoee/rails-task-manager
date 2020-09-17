@@ -1,0 +1,20 @@
+<h1><%= @task.title %></h1>
+
+<p><%= @task.details %></p>
+
+<p> This task is no xxx yet </p>
+
+<!-- Não use tag a no rails, sempre use link_to -->
+<!-- <a href="/restaurants">All Restaurants</a> -->
+
+<p>
+  <%= link_to '  🔙       Back to list', tasks_path %>
+</p>
+
+<p>
+  <%= link_to '✏️   Edit this task', edit_task_path(@task) %>
+</p>
+
+<!-- <p>
+  <%= link_to 'Remove this task', task_path(@task), method: :delete, data: { confirm: "Delete #{@task.title}?" } %>
+</p> -->
